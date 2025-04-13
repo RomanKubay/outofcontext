@@ -298,7 +298,7 @@
 
 // const WORD_REGEX = /(?<=\s|^|\b)(?:[-'%$#&\/]\b|\b[-'%$#&\/]|\d*\.?\d+|[A-Za-z0-9]|\([A-Za-z0-9]+\))+(?=\s|$|\b)/g;
 // const WORD_REGEX = /(?:\b|^)\S+\b/g;
-const WORD_REGEX = /[\p{L}\p{M}\d]+(?:['-’-][\p{L}\p{M}\d]+)*/g;
+const WORD_REGEX = /[\p{L}\p{M}\d]+(?:['-’-][\p{L}\p{M}\d]+)*/gu;
 
 const COST = {
   truncate: 2,
